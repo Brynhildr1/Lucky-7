@@ -8,7 +8,7 @@ The user selects one of the three categories to bet on.
 The program generates a random value between 1 and 13.
 
 If the user's bet matches the generated value, they win according to the payout rules:
-  If the user bet on "lower" or "higher" and their bet matches the generated value, they receive a 2x payout.
-  If the user bet on "7" and the generated value is 7, they receive a 4x payout.
+  1. If the user bet on "lower" or "higher" and their bet matches the generated value, they receive a 2x payout.
+  2. If the user bet on "7" and the generated value is 7, they receive a 4x payout.
 
 The payout is calculated by multiplying the user's bet amount by the respective payout multiplier.
