@@ -64,7 +64,7 @@ int main()
         {
             cout << "\n'Higher' has been locked in. Good Luck!" << endl;
         }
-        else/
+        else
         {
             cout << "\nLucky 7 has been locked in. Good Luck!" << endl;
         }
