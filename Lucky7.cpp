@@ -4,9 +4,10 @@
 #include <limits>
 #include <iomanip>
 #include <cctype>
-#include <unistd.h>
 #include <cstdlib>
 #include <ctime>
+#include <random>
+#include <windows.h> // for windows
 
 using namespace std;
 
@@ -71,9 +72,15 @@ int main()
 
         // begin the roll
 
-        srand(time(NULL));
+        // Create a random number generator engine
+        random_device rd;
+        mt19937 rng(rd());
 
-        int randNum = (rand() % 13) + 1;
+        // Create a uniform distribution for integers between 1 and 13
+        uniform_int_distribution<int> dist(1, 13);
+
+        // Generate a random number between 1 and 13
+        int randNum = dist(rng);
         cout << "\nAnd the number is... ";
 
         sleep(1);
